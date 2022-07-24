@@ -1,7 +1,8 @@
 .banner_image_container{
-  height: 30vh;
+  height: 257px;
   background-image: url('../media/banner_principal.jpg');
   background-size: cover;
   border-bottom: 4px solid black;
+  background-repeat: no-repeat;
   background-position-y: -15px;
 }

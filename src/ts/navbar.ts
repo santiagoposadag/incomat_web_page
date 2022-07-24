@@ -21,6 +21,7 @@ mobileMenuContainer.classList.add('display_none')
 sections.forEach(title => {
   let div:HTMLDivElement = document.createElement("div")
   let span:HTMLSpanElement = document.createElement('span')
+  span.classList.add('button')
   div.append(span)
   span.addEventListener('click',() => changeCurrentPlace(span))
   const className:string = `${title}_menu_container`

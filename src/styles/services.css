@@ -113,3 +113,82 @@
   flex: 0 0 50px;
   scroll-snap-align: start;
 }
+
+.contact_me_title{
+  font-size: 2rem;
+  width: 100%;
+  background-color: rgb(164, 82, 52);
+  text-align: center;
+  padding: 2rem 0;
+  border-bottom: 2px solid black;
+  border-TOP: 2px solid black;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+.contact_me_form{
+  background-color:  rgb(229, 217, 170);
+  padding: 2rem;
+  border-bottom: 2px solid black;
+  margin-bottom: 0;
+}
+
+label{
+  font-size: 1.2rem;
+}
+
+input{
+  width: 70%;
+  height: 2rem;
+  margin: 1rem 0;
+  border-style: none;
+  border-radius: 8px;
+  border-bottom: 2px solid rgb(52, 37, 37);
+}
+
+textarea{
+  width: 100%;
+  margin: 1rem 0;
+  height: 6rem;
+  border-style: none;
+  border-radius: 8px;
+  border-bottom: 2px solid rgb(52, 37, 37);
+}
+
+form button{
+  width: 40%;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  background-color: rgb(161, 163, 127);
+  border-style: none;
+  border-radius: 8px;
+  border-bottom: 2px solid rgb(52, 37, 37);
+  border-right: 2px solid rgb(52, 37, 37);
+}
+
+.button:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+footer{
+  background-color: rgb(164, 82, 52);
+  padding: 1rem;
+}
+
+.footer_contact_information{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact_card_container{
+  flex: 0 0 40%;
+}
+
+.contact_card_name{
+  margin: 0;
+}
+
+.location_city{
+  margin-bottom: 0;
+}

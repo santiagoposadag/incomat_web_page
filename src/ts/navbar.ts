@@ -18,12 +18,15 @@ mobileMenuContainer.className = 'mobile_menu_container'
 mobileMenuContainer.classList.add('display_none')
 
 //Adding the sections to the menu that is being displayed
-sections.forEach(title => {
+sections.forEach((title, index) => {
   let div:HTMLDivElement = document.createElement("div")
+  let aTag:HTMLAnchorElement = document.createElement('a')
+  aTag.href = `#target${index}`
   let span:HTMLSpanElement = document.createElement('span')
   span.classList.add('button')
   span.classList.add('main_menu_button')
-  div.append(span)
+  aTag.append(span)
+  div.append(aTag)
   span.addEventListener('click',() => changeCurrentPlace(span))
   const className:string = `${title}_menu_container`
   div.className = className

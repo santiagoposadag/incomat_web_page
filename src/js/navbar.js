@@ -1,6 +1,6 @@
 "use strict";
 //the list of sections where you can go 
-const sections = ["prueba1", "prueba2", "prueba3"];
+const sections = ["Inicio", "Servicios", "Nosotros", "Clientes", "Contacto"];
 //The list of sections in the menu where you can go
 let HTMLsections = [];
 //the current place where you are standing at this moment

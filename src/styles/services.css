@@ -5,7 +5,7 @@
   margin: 0px 0px;
   font-size: 2rem;
   padding: 2rem 0rem;
-  border-bottom: 3px solid black;;
+  border-bottom: 1px solid black;;
 }
 
 .service_card_container{
@@ -14,7 +14,8 @@
   align-items: center;
   width: 80vw;
   margin: 1rem auto;
-  border: 2px solid black;
+  border: 1px solid black;
+  border-radius: 16px;
 }
 
 .service_card_title_container{
@@ -25,10 +26,12 @@
   align-items: center;
   justify-content: space-around;
   padding: 1rem 0;
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid black;
+  border-radius: 16px 16px 0px 0px;
 }
 
 .service_card_title_container img{
+  border-radius: 16px;
   width: 90px;
 }
 
@@ -51,7 +54,8 @@
   flex-direction: column;
   align-items: center;
   background-color:  rgb(229, 217, 170);
-  border-top: 2px solid black;
+  border-top: 1px solid black;
+  border-radius: 0 0 16px 16px;
 }
 
 .service_card_images_container img{
@@ -63,7 +67,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid black;
 }
 
 .we_are_title{
@@ -72,8 +76,8 @@
   background-color: rgb(164, 82, 52);
   text-align: center;
   padding: 2rem 0;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
   margin: 0 0;
 }
 
@@ -93,7 +97,7 @@
   background-color: rgb(164, 82, 52);
   text-align: center;
   padding: 2rem 0;
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid black;
   margin: 0 0;
 }
 
@@ -120,8 +124,8 @@
   background-color: rgb(164, 82, 52);
   text-align: center;
   padding: 2rem 0;
-  border-bottom: 2px solid black;
-  border-TOP: 2px solid black;
+  border-bottom: 1px solid black;
+  border-TOP: 1px solid black;
   margin-top: 2rem;
   margin-bottom: 0;
 }
@@ -129,7 +133,7 @@
 .contact_me_form{
   background-color:  rgb(229, 217, 170);
   padding: 2rem;
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid black;
   margin-bottom: 0;
 }
 
@@ -143,7 +147,7 @@ input{
   margin: 1rem 0;
   border-style: none;
   border-radius: 8px;
-  border-bottom: 2px solid rgb(52, 37, 37);
+  border-bottom: 1px solid rgb(52, 37, 37);
 }
 
 textarea{
@@ -152,7 +156,7 @@ textarea{
   height: 6rem;
   border-style: none;
   border-radius: 8px;
-  border-bottom: 2px solid rgb(52, 37, 37);
+  border-bottom: 1px solid rgb(52, 37, 37);
 }
 
 form button{
@@ -162,8 +166,8 @@ form button{
   background-color: rgb(161, 163, 127);
   border-style: none;
   border-radius: 8px;
-  border-bottom: 2px solid rgb(52, 37, 37);
-  border-right: 2px solid rgb(52, 37, 37);
+  border-bottom: 1px solid rgb(52, 37, 37);
+  border-right: 1px solid rgb(52, 37, 37);
 }
 
 .button:hover{
@@ -183,6 +187,7 @@ footer{
 .footer_logo{
   width: 100px;
   margin: auto 1rem;
+  border-radius: 8px;
 }
 
 .footer_contact_information{

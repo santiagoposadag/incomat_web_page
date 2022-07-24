@@ -17,7 +17,7 @@ yellow: rgb(229, 217, 170); */
   background-color: rgb(164, 82, 52);
   position: relative;
   display: flex;
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid black;
 }
 
 .drop_down{
@@ -47,7 +47,6 @@ yellow: rgb(229, 217, 170); */
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-bottom: 2px solid black;
 }
 
 .mobile_menu_container div {
@@ -55,7 +54,6 @@ yellow: rgb(229, 217, 170); */
   width: 100vw;
   padding: 0.5rem;
   text-align: center;
-  border-bottom: 1px solid black;
 }
 
 .mobile_menu_container div span{

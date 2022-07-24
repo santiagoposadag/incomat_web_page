@@ -1,0 +1,7 @@
+.banner_image_container{
+  height: 30vh;
+  background-image: url('../media/banner_principal.jpg');
+  background-size: cover;
+  border-bottom: 4px solid black;
+  background-position-y: -15px;
+}

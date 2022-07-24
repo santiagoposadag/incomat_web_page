@@ -19,6 +19,7 @@ sections.forEach(title => {
     let div = document.createElement("div");
     let span = document.createElement('span');
     span.classList.add('button');
+    span.classList.add('main_menu_button');
     div.append(span);
     span.addEventListener('click', () => changeCurrentPlace(span));
     const className = `${title}_menu_container`;

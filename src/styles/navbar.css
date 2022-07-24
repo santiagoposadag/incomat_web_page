@@ -3,6 +3,11 @@
 green: rgb(167, 171, 104);
 yellow: rgb(229, 217, 170); */
 
+.mobile_navbar_container{
+  width: 100vw;
+  position:fixed;
+}
+
 .display_none {
   display: none;
 }
@@ -75,5 +80,9 @@ yellow: rgb(229, 217, 170); */
   margin: auto;
   padding: 0.2rem 1rem;
   border-radius: 8px;
+}
+
+.main_menu_button{
+  width: 50vw;
 }
 

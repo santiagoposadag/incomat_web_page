@@ -1,0 +1,35 @@
+.we_are{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.we_are_title{
+  font-size: 2rem;
+  width: 100%;
+  background-color: rgb(164, 82, 52);
+  text-align: center;
+  padding: 2rem 0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin: 0 0;
+}
+
+.we_are_description{
+  width: 90%;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 744px) {
+  .we_are_title{
+    padding: 1rem 0;
+    font-size: 1.5rem;
+  }
+
+  .we_are_description{
+    width: 80%;
+    font-size: 1.2rem;
+
+  }
+}

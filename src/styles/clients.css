@@ -1,0 +1,39 @@
+
+.clients_container{
+  display:flex;
+  flex-direction: column;align-items: center;
+}
+
+.clients_title{
+  font-size: 2rem;
+  width: 100%;
+  background-color: rgb(164, 82, 52);
+  text-align: center;
+  padding: 2rem 0;
+  border-bottom: 1px solid black;
+  margin: 0 0;
+}
+
+@media (min-width: 744px) {
+  .clients_title{
+    padding: 1rem 0;
+    font-size: 1.5rem;
+  }
+}
+
+.carusel_container{
+  width: 100vw;
+  display: flex;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+  padding: 24px;
+  gap: 12px;
+  scroll-padding: 24px;
+  margin-top: 3rem;
+}
+
+.carusel_container .item{
+  width: 150px;
+  flex: 0 0 50px;
+  scroll-snap-align: start;
+}

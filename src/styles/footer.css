@@ -13,7 +13,7 @@ footer{
   margin: auto 1rem;
   border-radius: 8px;
 }
-@media (min-width: 400px) {
+@media (min-width: 630px) {
   .footer_logo{
     flex: 0 0 20%;
   }
@@ -26,7 +26,7 @@ footer{
   justify-content: space-evenly;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 630px) {
   .footer_contact_information{
     flex-direction: row;
     flex: 0 0 80%;

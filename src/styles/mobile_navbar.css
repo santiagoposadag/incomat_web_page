@@ -8,6 +8,12 @@ yellow: rgb(229, 217, 170); */
   position:fixed;
 }
 
+@media (min-width: 630px) {
+  .mobile_navbar_container{
+    display: none;
+  }
+}
+
 .display_none {
   display: none;
 }

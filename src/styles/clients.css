@@ -24,7 +24,7 @@
   margin-top: 3rem;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 630px) {
   .carusel_container{
     margin-top: 1rem;
   }
@@ -36,7 +36,7 @@
   scroll-snap-align: start;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 630px) {
   .carusel_container .item{
     width: 100px;
   }

@@ -5,22 +5,14 @@
 }
 
 .clients_title{
-  font-size: 2rem;
+  font-size: 1.5rem;
   width: 100%;
   background-color: rgb(164, 82, 52);
   text-align: center;
-  padding: 2rem 0;
+  padding: 1rem 0;
   border-bottom: 1px solid black;
   margin: 0 0;
 }
-
-@media (min-width: 744px) {
-  .clients_title{
-    padding: 1rem 0;
-    font-size: 1.5rem;
-  }
-}
-
 .carusel_container{
   width: 100vw;
   display: flex;
@@ -32,8 +24,20 @@
   margin-top: 3rem;
 }
 
+@media (min-width: 400px) {
+  .carusel_container{
+    margin-top: 1rem;
+  }
+}
+
 .carusel_container .item{
   width: 150px;
   flex: 0 0 50px;
   scroll-snap-align: start;
+}
+
+@media (min-width: 400px) {
+  .carusel_container .item{
+    width: 100px;
+  }
 }

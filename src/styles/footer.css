@@ -13,12 +13,24 @@ footer{
   margin: auto 1rem;
   border-radius: 8px;
 }
+@media (min-width: 400px) {
+  .footer_logo{
+    flex: 0 0 20%;
+  }
+}
 
 .footer_contact_information{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+}
+
+@media (min-width: 400px) {
+  .footer_contact_information{
+    flex-direction: row;
+    flex: 0 0 80%;
+  }
 }
 
 .contact_card_container{

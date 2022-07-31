@@ -1,13 +1,13 @@
 .banner_img{
   width: 100vw;
-  margin-top: 10vh;
+  margin-top: 45px;
 }
 
 .banner_image_container{
   border-bottom: 1px solid black;
 }
 
-@media (min-width: 744px) {
+@media (min-width: 400px) {
   .banner_image_container{
     width: 100vw;
   }

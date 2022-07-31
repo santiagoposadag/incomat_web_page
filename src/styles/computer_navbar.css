@@ -19,6 +19,8 @@
   padding: .3rem 1rem;
   border-radius: 8px;
   font-size: 1.1rem;
+  width: 12vw;
+  text-align: center;
 }
 
 .computer_title:hover{

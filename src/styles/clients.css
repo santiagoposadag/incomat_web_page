@@ -14,7 +14,7 @@
   margin: 0 0;
 }
 .carusel_container{
-  width: 100vw;
+  width: 100%;
   display: flex;
   overflow: auto;
   scroll-snap-type: x mandatory;
@@ -24,7 +24,7 @@
   margin-top: 3rem;
 }
 
-@media (min-width: 630px) {
+@media (min-width: 770px) {
   .carusel_container{
     margin-top: 1rem;
   }
@@ -36,7 +36,7 @@
   scroll-snap-align: start;
 }
 
-@media (min-width: 630px) {
+@media (min-width: 770px) {
   .carusel_container .item{
     width: 100px;
   }

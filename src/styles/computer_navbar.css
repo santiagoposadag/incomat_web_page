@@ -3,12 +3,17 @@
   position: fixed;
   height: 45px;
   background-color: rgb(164, 82, 52);
-  width: 100vw;
+  width: 100%;
   justify-content: space-evenly;
   align-items: center;
 }
 
-@media (max-width: 630px) {
+.computer_navbar div a{
+  text-decoration: none;
+  color: black;
+}
+
+@media (max-width: 770px) {
   .computer_navbar{
     display: none;
   }
@@ -19,15 +24,10 @@
   padding: .3rem 1rem;
   border-radius: 8px;
   font-size: 1.1rem;
-  width: 12vw;
+  width: 12%;
   text-align: center;
 }
 
 .computer_title:hover{
   transform: scale(1.1);
-}
-
-.computer_title a{
-  text-decoration: none;
-  color: black;
 }

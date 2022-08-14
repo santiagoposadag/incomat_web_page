@@ -49,14 +49,17 @@ mobileNavbarContainer?.append(mobileMenuContainer)
 const dropDown:HTMLDivElement|null = document.querySelector('.drop_down')
 
 dropDown?.addEventListener('click', toggleMenu)
+const contentBlocker = document.querySelector('.content_blocker') as HTMLDivElement;
+contentBlocker.addEventListener('click', toggleMenu)
 
 function toggleMenu(){
-  console.log(mobileMenuContainer?.classList.contains('display_none'));
   if(mobileMenuContainer?.classList.contains('display_none')){
+    contentBlocker.classList.remove('display_none') 
     mobileMenuContainer.classList.remove('display_none')
     HTMLsections.forEach(section => section.classList.remove('display_none'))
     return
   }
+  contentBlocker.classList.add('display_none') 
   mobileMenuContainer?.classList.add('display_none')
   HTMLsections.forEach(section => section.classList.add('display_none'))
 }

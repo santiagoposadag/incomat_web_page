@@ -2,48 +2,28 @@
 footer{
   background-color: rgb(164, 82, 52);
   padding: 2rem 1rem;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.footer_logo_and_contactinfo_container{
-  display: flex;
+@media (max-width: 770px) {
+  footer{
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .footer_logo{
   width: 100px;
   margin: auto 1rem;
   border-radius: 8px;
+  flex: 0 0 30%;
 }
-@media (min-width: 630px) {
+
+@media (max-width: 770px) {
   .footer_logo{
-    flex: 0 0 20%;
+    display: none;
   }
-}
-
-.footer_contact_information{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-@media (min-width: 630px) {
-  .footer_contact_information{
-    flex-direction: row;
-    flex: 0 0 80%;
-  }
-}
-
-.contact_card_container{
-  flex: 0 0 40%;
-}
-
-.contact_card_name{
-  margin: 0;
-  font-size: 1.2rem;
-}
-
-.contact_card_info{
-  font-size: 1.1rem;
 }
 
 .social_media_instagram_container{

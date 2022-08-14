@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="./src/styles/computer_navbar.css">
   <link rel="stylesheet" href="./src/styles/banner.css">
   <link rel="stylesheet" href="./src/styles/services.css">
+  <link rel="stylesheet" href="./src/styles/carousel.css">
   <link rel="stylesheet" href="./src/styles/clients.css">
   <link rel="stylesheet" href="./src/styles/contactme.css">
   <link rel="stylesheet" href="./src/styles/footer.css">
@@ -146,48 +147,51 @@
     <section class="clients_container">
       <h2 id="target3"class="clients_title">NUESTROS CLIENTES</h2>
       <div class="carusel_container">
-        <img src="./src/media/clientes/colanta_logo.png" alt="client_logo_image" class="item">
-        <img src="./src/media/clientes/coltejer_logo.png" alt="client_logo_image" class="item">
-        <img src="./src/media/clientes/corona_logo.png" alt="client_logo_image" class="item">
-        <img src="./src/media/clientes/drumond_logo.png" alt="client_logo_image" class="item">
-        <img src="./src/media/clientes/fabricato_logo.png" alt="client_logo_image" class="item">
-        <img src="./src/media/clientes/florisa_logo.png" alt="client_logo_image" class="item">
-        <img src="./src/media/clientes/glf_logo.png" alt="client_logo_image" class="item">
-        <img src="./src/media/clientes/leonisa_logo.png" alt="client_logo_image" class="item">
-        <img src="./src/media/clientes/papelsa_logo.png" alt="client_logo_image" class="item">
-        <img src="./src/media/clientes/uniban_logo.png" alt="client_logo_image" class="item">
+        
       </div>
       <div class="slideshow-container">
         <div class="slideshow-inner">
+
           <div class="mySlides fade">
-            <img src="./src/media/clientes/metro_logo.png" alt="client_logo_image" class="item" style='width: 20%;'>
-            <img src="./src/media/clientes/Argos_logo.png" alt="client_logo_image" class="item" style='width: 20%;'>
-            <img src="./src/media/clientes/epm_logo.png" alt="client_logo_image" class="item" style='width: 20%;'>
-            <img src="./src/media/clientes/yamaha_logo.png" alt="client_logo_image" class="item" style='width: 20%;'>
-            <img src="./src/media/clientes/alpina_logo.png" alt="client_logo_image" class="item" style='width: 20%;'>
-            <img src='./assets/img/web-crab-compressed.jpg' style='width: 100%;' alt="sally lightfoot crab" />
+            <div class="clients_images_container">
+              <img src="./src/media/clientes/metro_logo.png" alt="client_logo_image" class="item" >
+              <img src="./src/media/clientes/Argos_logo.png" alt="client_logo_image" class="item" >
+              <img src="./src/media/clientes/epm_logo.png" alt="client_logo_image" class="item" >
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="clients_images_container">
+              <img src="./src/media/clientes/yamaha_logo.png" alt="client_logo_image" class="item" >
+              <img src="./src/media/clientes/alpina_logo.png" alt="client_logo_image" class="item" >
+              <img src="./src/media/clientes/colanta_logo.png" alt="client_logo_image" class="item" >
+            </div>
           </div>
       
           <div class="mySlides fade">
-      
-            <img src='./assets/img/web-fighting-nazcas.jpg' style='width: 100%;' alt="fighting nazca boobies" />
+            <div class="clients_images_container">
+              <img src="./src/media/clientes/coltejer_logo.png" alt="client_logo_image" class="item" >
+              <img src="./src/media/clientes/corona_logo.png" alt="client_logo_image" class="item" >
+              <img src="./src/media/clientes/drumond_logo.png" alt="client_logo_image" class="item">
+            </div>
           </div>
-      
+
           <div class="mySlides fade">
-      
-            <img src='./assets/img/web-otovalo-waterfall.jpg' style='width: 100%;' alt="otovalo waterfall" />
+            <div class="clients_images_container">
+              <img src="./src/media/clientes/fabricato_logo.png" alt="client_logo_image" class="item" >
+              <img src="./src/media/clientes/florisa_logo.png" alt="client_logo_image" class="item"  >
+              <img src="./src/media/clientes/glf_logo.png" alt="client_logo_image" class="item"  >
+            </div>
           </div>
-      
+
           <div class="mySlides fade">
-      
-            <img src='./assets/img/web-pelican.jpg' style='width: 100%;' alt="pelican" />
+            <div class="clients_images_container">
+              <img src="./src/media/clientes/leonisa_logo.png" alt="client_logo_image" class="item"  >
+              <img src="./src/media/clientes/papelsa_logo.png" alt="client_logo_image" class="item"  >
+              <img src="./src/media/clientes/uniban_logo.png" alt="client_logo_image" class="item"  >
+            </div>
           </div>
-      
         </div>
-      
-      
-        <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
-        <a class="next" onclick='plusSlides(1)'>&#10095;</a>
       </div>
       <br />
       
@@ -197,6 +201,7 @@
         <span class="dot" onclick='currentSlide(2)'></span>
         <span class="dot" onclick='currentSlide(3)'></span>
         <span class="dot" onclick='currentSlide(4)'></span>
+        <span class="dot" onclick='currentSlide(5)'></span>
       </div>
     </section>
   </main>
@@ -223,5 +228,6 @@
     </div>
   </footer>
   <script type="module" src="./src/js/navbar.js"></script>  
+  <script src="./src/js/carousel.js"></script>  
 </body>
 </html>

@@ -6,9 +6,9 @@ var slideshowContainer;
 
 window.addEventListener("load",function() {
     showSlides(slideIndex);
-    myTimer = setInterval(function(){plusSlides(1)}, 2000);
+    myTimer = setInterval(function(){plusSlides(1)}, 3000);
     //to stop the carousel uncomment the line below
-    clearInterval(myTimer);
+    // clearInterval(myTimer);
   
     //COMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
     slideshowContainer = document.querySelector('.slideshow-inner') as HTMLDivElement;
@@ -32,16 +32,16 @@ function plusSlides(n:number){
   //COMMENT OUT THE LINES BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
   
   if (n === -1){
-    myTimer = setInterval(() =>plusSlides(n + 2), 2000);
+    myTimer = setInterval(() =>plusSlides(n + 2), 3000);
   } else {
-    myTimer = setInterval(() =>plusSlides(n + 1), 2000);
+    myTimer = setInterval(() =>plusSlides(n + 1), 3000);
   }
 }
 
 //Controls the current slide and resets interval if needed
 function currentSlide(n:number){
   clearInterval(myTimer);
-  myTimer = setInterval(function(){plusSlides(n + 1)}, 2000);
+  myTimer = setInterval(function(){plusSlides(n + 1)}, 3000);
   showSlides(slideIndex = n);
 }
 
@@ -67,5 +67,5 @@ function pause(){
 
 function resume(){
   clearInterval(myTimer);
-  myTimer = setInterval(function(){plusSlides(slideIndex)}, 2000);
+  myTimer = setInterval(function(){plusSlides(slideIndex)}, 3000);
 }

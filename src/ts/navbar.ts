@@ -22,6 +22,7 @@ sections.forEach((title, index) => {
   let div:HTMLDivElement = document.createElement("div")
   let aTag:HTMLAnchorElement = document.createElement('a')
   aTag.href = `#target${index}`
+  aTag.className = "go_to_section"
   let span:HTMLSpanElement = document.createElement('span')
   span.classList.add('button')
   span.classList.add('main_menu_button')
@@ -63,3 +64,12 @@ function toggleMenu(){
   mobileMenuContainer?.classList.add('display_none')
   HTMLsections.forEach(section => section.classList.add('display_none'))
 }
+
+
+
+// const form = document.querySelector(".contact_me_form") as HTMLFormElement;
+// form.addEventListener('submit', (e) => manageForm(e))
+// function manageForm(e:SubmitEvent){
+//   console.log(e);
+
+// }

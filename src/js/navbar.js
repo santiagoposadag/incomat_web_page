@@ -19,6 +19,7 @@ sections.forEach((title, index) => {
     let div = document.createElement("div");
     let aTag = document.createElement('a');
     aTag.href = `#target${index}`;
+    aTag.className = "go_to_section";
     let span = document.createElement('span');
     span.classList.add('button');
     span.classList.add('main_menu_button');
@@ -54,3 +55,8 @@ function toggleMenu() {
     mobileMenuContainer === null || mobileMenuContainer === void 0 ? void 0 : mobileMenuContainer.classList.add('display_none');
     HTMLsections.forEach(section => section.classList.add('display_none'));
 }
+// const form = document.querySelector(".contact_me_form") as HTMLFormElement;
+// form.addEventListener('submit', (e) => manageForm(e))
+// function manageForm(e:SubmitEvent){
+//   console.log(e);
+// }

@@ -1,17 +1,34 @@
-.banner_img{
-  width: 100%;
-  margin-top: 45px;
-  max-width: 75%;
-}
+
 
 .banner_image_container{
   border-bottom: 1px solid black;
+  width: 100%;
 }
+
+.banner_img{
+  width: 75%;
+  margin-top: 45px;
+}
+
+
 
 
 
 @media (min-width: 770px) {
   .banner_image_container{
     width: 100%;
+  }
+}
+
+@media (max-width: 770px) {
+  .banner_image_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .banner_img{
+    width: 100vw;
+    min-width: 355px;
   }
 }

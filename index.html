@@ -34,27 +34,36 @@
     <div class="content_blocker display_none">
     </div>
     <div class="computer_navbar">
-      <div><a href="#target0"><span class="computer_title">Inicio</span></a></div>
-      <div><a href="#target1"><span class="computer_title">Servicios</span></a></div>
-      <div><a href="#target2"><span class="computer_title">Nosotros</span></a></div>
-      <div><a href="#target4"><span class="computer_title">Contacto</span></a></div>
-      <div><a href="#target3"><span class="computer_title">Clientes</span></a></div>
+      <div><a class="go_to_section" href="#target0"><span class="computer_title">Inicio</span></a></div>
+      <div><a class="go_to_section" href="#target1"><span class="computer_title">Servicios</span></a></div>
+      <div><a class="go_to_section" href="#target2"><span class="computer_title">Nosotros</span></a></div>
+      <div><a class="go_to_section" href="#target4"><span class="computer_title">Contacto</span></a></div>
+      <div><a class="go_to_section" href="#target3"><span class="computer_title">Clientes</span></a></div>
     </div>
   </header>
   <main>
     <section class="banner">
       <div class="banner_image_container">
-        <img id="target0" src="./src/media/banner_principal.jpg" alt="banner"
-        class="banner_img">
+        <img id="target0" src="./src/media/banner-pc.jpg" alt="banner"
+        class="banner_img banner_pc">
       </div>
     </section>
+    <a
+      class="home__contact-link"
+      href="https://api.whatsapp.com/send?phone=573153041979&text=Saludos,%20me%20gustaría%20tener%20información%20de%20sus%20servicios."
+      target="_blank"
+      ><img
+        class="home__contact-link-img"
+        src="./src/media/wpp-icon.png"
+        alt="wpp"
+    /></a>
     <section class="services">
       <h2 id="target1" class="services_title">SERVICIOS</h2>
       <div class="services_all_cards_container">
         <div class="service_card_container">
           <div class="service_card_title_container">
             <h3 class="service_card_title">PROTECCIÓN CATÓDICA</h3>
-            <img src="./src/media/servicios/proteccion_catodica/logo.jpg" alt="logo">
+            <img src="./src/media/servicios/proteccion_catodica/logo.png" alt="logo">
           </div>
           <div class="service_card_description_container">
             <p class="service_card_description">Servicios especializados en control de corrosión de tuberías de transporte de gas, crudo, agua, tanques de almacenamiento y muelles. <br>
@@ -70,7 +79,7 @@
         <div class="service_card_container">
           <div class="service_card_title_container">
             <h3 class="service_card_title">ANÁLISIS DE INTEGRIDAD</h3>
-            <img src="./src/media/servicios/analisis_integridad/logo.jpg" alt="logo">
+            <img src="./src/media/servicios/analisis_integridad/logo.png" alt="logo">
           </div>
           <div class="service_card_description_container">
             <p class="service_card_description">
@@ -86,7 +95,7 @@
         <div class="service_card_container">
           <div class="service_card_title_container">
             <h3 class="service_card_title">RECUBRIMIENTOS</h3>
-            <img src="./src/media/servicios/recubrimiento/logo.jpg" alt="logo">
+            <img src="./src/media/servicios/recubrimiento/logo.png" alt="logo">
           </div>
           <div class="service_card_description_container">
             <p class="service_card_description">
@@ -101,7 +110,7 @@
         <div class="service_card_container">
           <div class="service_card_title_container">
             <h3 class="service_card_title">ANÁLISIS DE FALLAS</h3>
-            <img src="./src/media/servicios/analisis_fallas/logo.jpg" alt="logo">
+            <img src="./src/media/servicios/analisis_fallas/logo.png" alt="logo">
           </div>
           <div class="service_card_description_container">
             <p class="service_card_description">
@@ -130,16 +139,23 @@
       </section>
       <section class="contact_me">
         <h2 id="target4" class="contact_me_title">TE CONTACTAMOS </h2>
-        <form class="contact_me_form" action="#">
+        <form class="contact_me_form"
+        method="post"
+         action="https://formsubmit.co/52afb02900b28fe1aa2b7e36162a7f0c">
           <label>Nombre completo: </label><br>
-          <input type="text" name="name" /><br>
+          <input type="text" name="name" required/><br>
           <label>Numero de contacto: </label><br>
-          <input type="text" name="phone_number" /><br>
+          <input type="text" name="phone_number" required/><br>
           <label >Correo: </label><br>
-          <input type="text" name="email" /><br>
+          <input type="text" name="email" required/><br>
           <label>Mensaje: </label><br>
           <textarea name="reason" id="reason_textarea" cols="30" rows="10"></textarea>
           <br>
+          <input
+                type="hidden"
+                name="_next"
+                value="https://santiagoposadag.github.io/incomat_web_page/#target0"
+              />
           <button class="button">Enviar</button>
         </form>
       </section>
@@ -229,5 +245,6 @@
   </footer>
   <script type="module" src="./src/js/navbar.js"></script>  
   <script src="./src/js/carousel.js"></script>  
+  <script src="./src/js/general.js"></script>  
 </body>
 </html>

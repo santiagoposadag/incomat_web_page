@@ -23,10 +23,12 @@ body{
 
 .home__contact-link-img{
   width: 4rem;
+  transition: .5s ease;
 }
 
 .home__contact-link-img:hover{
   cursor: pointer;
+  transform: scale(1.1);
 }
 
 
